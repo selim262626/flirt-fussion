@@ -1,0 +1,133 @@
+/* Réinitialisation des marges et styles de base */
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+/* Style pour la barre de navigation */
+nav {
+    position: relative; /* Fixée en haut de la page */
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.155); /* Fond semi-transparent */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 10; /* S'assure que la navbar soit toujours au-dessus */
+}
+
+nav menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+nav li {
+    display: inline;
+}
+
+nav li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+/* Fond flou couvrant toute la page */
+.background {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc-NccY9IorVnyHM3lDtSGIpIWaJ2KyA2eeEcC_r7Axwo6wZLOxM3fJxLZG3_b22juUg4&usqp=CAU");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Contenu de la page centré avec des styles harmonieux */
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+    max-width: 800px;
+    margin: 100px auto 20px auto; /* Espacement pour la navbar et centré */
+    background-color: rgba(255, 255, 255, 0.8); /* Fond légèrement transparent */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de profondeur */
+    text-align: center;
+}
+
+h1, h2 {
+    color: rgb(51, 36, 36); /* Couleur du texte */
+}
+
+p {
+    color: rgb(51, 36, 36); /* Couleur du texte */
+    line-height: 1.6; /* Espacement entre les lignes pour une meilleure lisibilité */
+}
+
+/* Footer avec positionnement cohérent et style esthétique */
+footer {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.155); /* Fond semi-transparent */
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.store-links {
+    margin-top: 10px;
+}
+
+.store-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+.store-links a:hover {
+    text-decoration: underline;
+}
+
+  
+
+.footer-content p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.store-logo {
+    width: 150px; /* Ajuste la taille selon tes besoins */
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+.store-logo:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}

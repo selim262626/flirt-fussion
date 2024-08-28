@@ -1,0 +1,109 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.155); /* Fond semi-transparent */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.background {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc-NccY9IorVnyHM3lDtSGIpIWaJ2KyA2eeEcC_r7Axwo6wZLOxM3fJxLZG3_b22juUg4&usqp=CAU");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+#about {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.352); /* Couleur de fond avec transparence */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de profondeur */
+    text-align: center;
+    width: 80%;
+    max-width: 800px;
+    margin: 80px auto 20px; /* Marge auto pour centrer la section */
+}
+
+#about h2 {
+    color: rgb(51, 36, 36); /* Couleur du texte */
+}
+
+#about p {
+    color: rgb(51, 36, 36); /* Couleur du texte */
+    line-height: 1.6; /* Espacement entre les lignes pour une meilleure lisibilité */
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.155); /* Fond semi-transparent */
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 2;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.store-logo {
+    height: 40px; /* Ajustez la hauteur des logos */
+    margin: 0 10px; /* Espacement entre les logos */
+}

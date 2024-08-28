@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page de Match</title>
+    <link rel="stylesheet" href="rencontre.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="rencontre.html">Match</a></li>
+            <li><a href="profile.html">Mon Profil</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="logout.html">Déconnexion</a></li>
+        </ul>
+    </nav>
+
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Section Match -->
+    <div class="match-section">
+        <h1>Profils recommandés</h1>
+
+        <!-- Profile Cards -->
+        <div class="profile-card" id="profile1">
+            <img src="photo2.jpg" alt="Profil 2">
+            <div class="info">
+                <h2>Cyrine Khiari</h2>
+                <p>24 ans, Dubai</p>
+            </div>
+            <div class="buttons">
+                <a href="messages.html?profile=cyrine" class="match-button">Match</a>
+                <button class="pass-button" onclick="removeProfile('profile1')">Pass</button>
+            </div>
+        </div>
+
+        <div class="profile-card" id="profile2">
+            <img src="photo1.jpg" alt="Profil 1">
+            <div class="info">
+                <h2>Malek Sahli</h2>
+                <p>20 ans, Miami</p>
+            </div>
+            <div class="buttons">
+                <a href="messages.html?profile=malek" class="match-button">Match</a>
+                <button class="pass-button" onclick="removeProfile('profile2')">Pass</button>
+            </div>
+        </div>
+
+        <div class="profile-card" id="profile3">
+            <img src="photo3.jpg" alt="Profil 3">
+            <div class="info">
+                <h2>Youssef Mili</h2>
+                <p>26 ans, Tunisie</p>
+            </div>
+            <div class="buttons">
+                <a href="messages.html?profile=youssef" class="match-button">Match</a>
+                <button class="pass-button" onclick="removeProfile('profile3')">Pass</button>
+            </div>
+        </div>
+
+        <div class="profile-card" id="profile4">
+            <img src="https://i.pinimg.com/736x/43/c6/fb/43c6fb38eb5577eb58f9c5f3ec8b02c4.jpg" alt="Profil 4">
+            <div class="info">
+                <h2>Linda</h2>
+                <p>22 ans, New York</p>
+            </div>
+            <div class="buttons">
+                <a href="messages.html?profile=linda" class="match-button">Match</a>
+                <button class="pass-button" onclick="removeProfile('profile4')">Pass</button>
+            </div>
+        </div>
+
+        <div class="profile-card" id="profile5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRM7DmonwxisQfFN0BP8KgLHvEn5kMZ454pKQ&s" alt="Profil 5">
+            <div class="info">
+                <h2>Helena</h2>
+                <p>20 ans, Sweden</p>
+            </div>
+            <div class="buttons">
+                <a href="messages.html?profile=helena" class="match-button">Match</a>
+                <button class="pass-button" onclick="removeProfile('profile5')">Pass</button>
+            </div>
+        </div>
+
+        <div class="profile-card" id="profile6">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQulQpVS4u3gxegX3l4Q_Be0APidaKqRae7Uw&s" alt="Profil 6">
+            <div class="info">
+                <h2>Stephan</h2>
+                <p>24 ans, Allemagne</p>
+            </div>
+            <div class="buttons">
+                <a href="messages.html?profile=stephan" class="match-button">Match</a>
+                <button class="pass-button" onclick="removeProfile('profile6')">Pass</button>
+            </div>
+        </div>
+
+        <div class="profile-card" id="profile7">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHmiUhgvyBVEw-yvsWeRo1zWfqF4jT4rRkKg&s" alt="Profil 7">
+            <div class="info">
+                <h2>Ahmed</h2>
+                <p>21 ans, Qatar</p>
+            </div>
+            <div class="buttons">
+                <a href="messages.html?profile=ahmed" class="match-button">Match</a>
+                <button class="pass-button" onclick="removeProfile('profile7')">Pass</button>
+            </div>
+        </div>
+
+        <div class="profile-card" id="profile8">
+            <img src="med.jpg" alt="Profil 8">
+            <div class="info">
+                <h2>Mouhamed Brahem</h2>
+                <p>23 ans, Tunisie</p>
+            </div>
+            <div class="buttons">
+                <a href="messages.html?profile=mouhamed" class="match-button">Match</a>
+                <button class="pass-button" onclick="removeProfile('profile8')">Pass</button>
+            </div>
+        </div>
+    </div>
+
+   <!-- Footer -->
+<footer class="footer">
+    <div class="footer-content">
+        <p>Téléchargez notre application :</p>
+        <!-- Lien vers Google Play -->
+        <a href="https://play.google.com/store" target="_blank">
+            <img src="https://logos-world.net/wp-content/uploads/2020/11/Google-Play-Logo.png" alt="Disponible sur Google Play" class="store-logo">
+        </a>
+        <!-- Lien vers l'App Store -->
+        <a href="https://www.apple.com/app-store/" target="_blank">
+            <img src="Capture d'écran 2024-08-28 112206.png" alt="Disponible sur l'App Store" class="store-logo">
+        </a>
+    </div>
+</footer>
+<style>
+  
+
+.footer-content p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.store-logo {
+    width: 150px; /* Ajuste la taille selon tes besoins */
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+.store-logo:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}
+
+</style>
+
+    <script>
+        function removeProfile(profileId) {
+            var profile = document.getElementById(profileId);
+            if (profile) {
+                profile.style.display = 'none'; // Cache le profil
+            }
+        }
+    </script>
+</body>
+</html>

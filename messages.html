@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Messages</title>
+    <link rel="stylesheet" href="messages.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="rencontre.html">Match</a></li>
+            <li><a href="profile.html">Mon Profil</a></li>
+            <li><a href="messages.html">Messages</a></li>
+            <li><a href="index.html">Déconnexion</a></li>
+        </ul>
+    </nav>
+
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Section Chat -->
+    <div class="chat-container">
+        <div class="chat-header">
+            <div class="profile-info">
+                <img id="profile-image" src="path/to/default-profile.png" alt="Profil" class="profile-image">
+                <div class="profile-details">
+                    <h2 id="profile-name">Nom de l'utilisateur</h2>
+                    <p id="profile-age-location">Âge, Localisation</p>
+                </div>
+            </div>
+        </div>
+        <div class="chat-box" id="chat-box">
+            <!-- Les messages seront affichés ici -->
+            <div class="message received">
+                <p>Salut, comment ça va ?</p>
+                <span class="time">14:32</span>
+            </div>
+            <div class="message sent">
+                <p>Ça va bien, et toi ? 😊</p>
+                <span class="time">14:34</span>
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="message-input" placeholder="Écrivez un message..." />
+            <button id="send-button">Envoyer</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Téléchargez notre application :</p>
+        <div class="footer-icons">
+            <a href="https://play.google.com/store/apps/details?id=yourapp" target="_blank">
+                <img src="path/to/playstore-icon.png" alt="Télécharger sur Google Play">
+            </a>
+            <a href="https://apps.apple.com/us/app/yourapp/id1234567890" target="_blank">
+                <img src="path/to/appstore-icon.png" alt="Télécharger sur l'App Store">
+            </a>
+        </div>
+    </footer>
+
+    <script src="messages.js"></script>
+</body>
+</html>

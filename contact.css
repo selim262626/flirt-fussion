@@ -1,0 +1,187 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.155); /* Fond semi-transparent */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.background {
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTc-NccY9IorVnyHM3lDtSGIpIWaJ2KyA2eeEcC_r7Axwo6wZLOxM3fJxLZG3_b22juUg4&usqp=CAU");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    overflow: auto;
+}
+
+#contact {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.352); /* Couleur de fond avec transparence */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet de profondeur */
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+    margin-top: 80px; /* Espacement pour la navbar */
+}
+
+#contact h1 {
+    color: rgb(51, 36, 36); /* Couleur du texte */
+}
+
+#contact p {
+    color: rgb(51, 36, 36); /* Couleur du texte */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: rgb(51, 36, 36);
+    display: block;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+form textarea {
+    resize: vertical;
+}
+
+form input[type="submit"] {
+    background-color: #ff5a5f; /* Couleur de fond rouge */
+    color: white; /* Couleur du texte */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Animation de la couleur */
+    text-decoration: none;
+}
+
+form input[type="submit"]:hover {
+    background-color: #e0484d;
+}
+
+footer {
+    position:relative;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.155); /* Fond semi-transparent */
+    color: #333;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.store-links {
+    margin-top: 10px;
+}
+
+.store-links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.store-links a:hover {
+    text-decoration: underline;
+}
+
+
+.footer-content p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.store-logo {
+    width: 150px; /* Ajuste la taille selon tes besoins */
+    margin: 5px;
+    transition: transform 0.3s;
+}
+
+.store-logo:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('userForm').addEventListener('submit', function(event) {
+                event.preventDefault(); // Empêche l'envoi du formulaire par défaut
+
+                // Ici, tu peux ajouter du code pour valider les données du formulaire
+                // Par exemple, envoyer les données à un serveur via AJAX
+
+                // Redirection vers la page de rencontre après l'inscription
+                window.location.href = 'rencontre.html';
+            });
+        });
+    </script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <ul class="navbar-menu">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="a-propos.html">À propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="politique.html">Politique de Confidentialité</a></li>
+            <li><a href="securite.html">securite</a></li>
+</nav>
+
+    <!-- Background -->
+    <div class="background"></div>
+
+    <!-- Form Section -->
+    <div class="content">
+        <div class="form-container" id="box">
+            <h1>Créer un compte</h1>
+            <form id="userForm">
+                <div class="form-group">
+                    <label for="nom">Nom:</label>
+                    <input type="text" id="nom" name="nom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="prenom">Prénom:</label>
+                    <input type="text" id="prenom" name="prenom" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Mot de passe:</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="age">Âge:</label>
+                    <input type="number" id="age" name="age" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="gender-select">Genre :</label>
+                    <select id="gender-select" name="gender">
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                        <option value="personnalisé">Personnalisé</option>
+                    </select>
+                </div>
+
+                <div class="button-group">
+                    <a href="index.html"><button type="button" class="back-button">Revenir en arrière</button></a>
+                    <input type="submit" value="Créer un compte">
+                </div>
+            </form>
+        </div>
+    </div>
+
+    
+</body>
+</html>
